@@ -18,7 +18,8 @@ class App extends React.Component {
     onSearchInputChange = (inputText) => {
         this.setState({
             headerExpanded: !inputText,
-            suggestedNames: inputText ? name(inputText) : [],
+            suggestedNames:
+                inputText !== '' && inputText.length > 0 ? name(inputText) : [],
         });
     };
     render() {

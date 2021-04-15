@@ -7,6 +7,7 @@ const SearchBox = ({ handleInputChange }) => {
                 placeholder="Type words"
                 className="search-input"
                 onChange={(event) => {
+                    debugger;
                     handleInputChange(event.target.value);
                 }}
             />
